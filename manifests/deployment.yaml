@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: laravelsample
+  name: laravelsample
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: laravelsample
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: laravelsample
+    spec:
+      containers:
+      - image: laravelsampleacr.azurecr.io/laravelsample:a838fd1075b7351b504e7f56c83196908362d0a5
+        name: laravelsample
+        ports:
+        - containerPort: 8080
+        resources: {}
