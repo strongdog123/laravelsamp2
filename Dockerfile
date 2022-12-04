@@ -4,6 +4,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN docker-php-ext-install pdo
 WORKDIR /app
 #COPY /php/laravel/container/Application/. .
+#copy all files from github project root dir to image's current dir
 COPY . .
 RUN composer install
 
