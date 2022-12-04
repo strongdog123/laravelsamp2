@@ -18,7 +18,7 @@ spec:
         app: laravelsamp2
     spec:
       containers:
-      - image: laravelsamp2acr.azurecr.io/laravelsamp2:4f176c4d60ade0a8dbd6f6cf2fe3a1beb759f4e8
+      - image: laravelsamp2acr.azurecr.io/laravelsamp2:5a27b8da76a493467b71d7e69877fdc092517118
         name: laravelsamp2
         ports:
         - containerPort: 3000
