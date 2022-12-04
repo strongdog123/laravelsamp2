@@ -21,5 +21,5 @@ spec:
       - image: laravelsamp2acr.azurecr.io/image-laravelsamp2
         name: image-laravelsamp2
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
         resources: {}
